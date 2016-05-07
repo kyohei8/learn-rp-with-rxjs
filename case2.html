@@ -1,0 +1,6 @@
+<!DOCTYPE html> <html class="no-js"> <head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>case 2 request and response</title>  <link rel="shortcut icon" href="/favicon.ico"> <link rel="apple-touch-icon" href="/apple-touch-icon.png"> <link rel="stylesheet" href="styles/main.css"> <script src="scripts/vendor/modernizr.js"></script> </head> <body> <div class="left-box"> <h2 class="title">Request and Response</h2> <pre class="desc"><br>リクエスト＆レスポンスにRxJsがどのようにアプローチするか？
+すべてはStreamであり、そこから始まる。
+1) リクエストStremの生成。URLの文字列からStreamを生成する
+2) そのSteamからリクエストを生成、実行する
+3) 生成されるリクエスト(ajax)はPromiseなのでRx.Observable.fromPromise()とflatMapを使って
+別のstream(レスポンスストリーム）を生成する(streamを直接返すようにするためflatmapを使う）</pre> <footer class="footer-container"><a class="prev" href="./case1.html">≪prev</a><a class="next" href="./case3.html">next ≫</a></footer> </div> <div class="right-box"> <div class="button-container"><span class="button" id="btn">Start Request!</span><span class="button" id="clr">Clear</span></div> <div class="feed-box" id="feed-box"></div> </div> <script src="scripts/case2.bundle.js"></script> </body> </html>
